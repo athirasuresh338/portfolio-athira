@@ -226,7 +226,7 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  emailjs.init("b0gskUkx3CN3dkx76"); // Your Public Key
+  emailjs.init("b0gskUkx3CN3dkx76");
 
 
 const form = document.getElementById("contact-form");
@@ -240,12 +240,12 @@ const form = document.getElementById("contact-form");
       errorMsg.classList.add("d-none");
       document.querySelectorAll(".error-text").forEach(el => el.remove());
 
-      let isValid = false;
+      let isValid = true;
 
       const name = form.name.value.trim();
       if (name === "") {
         showError(form.name, "Name is required");
-        isValid = true;
+        isValid = false;
       }
 
       const email = form.email.value.trim();
