@@ -226,7 +226,7 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
-  emailjs.init("97__666edR4TybqaP"); // Your Public Key
+  emailjs.init("b0gskUkx3CN3dkx76"); // Your Public Key
 
 
 const form = document.getElementById("contact-form");
